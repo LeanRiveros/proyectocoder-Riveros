@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* HEADER */
+header {
+    grid-area: encabezado;
+    display: flex;
+    background-color: #3EC1D3;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+.contenedor_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.contenedor_logo a {
+    text-align: center;
+}
+.logo {
+    width: 50%;
+}
+.navbar {
+    display: flex;
+    width: 70%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar li a{
+    color: whitesmoke;
+    text-decoration: none; 
+    padding: 10px;
+    border-radius: 50%;  
+}
+.navbar li a:hover{
+    background-color: #0D4C92; 
+}
+/* MAIN */
+main {
+    background-color: #cdc2c2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: principal;
+}
+.index-principal {
+    width: 100%;
+}
+
+#no_principal {
+    background-color: #e6e0e0;
+}
+.grid-container-index-no_principal {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:    "imagen-1    descrip-1"
+                            "descrip-2   imagen-2";
+}
+ #no_principal_img1 {
+    grid-area: imagen-1;
+ }
+ 
+ .img-index {
+    width: 100%;
+ }
+
+ #no_principal_txt1 {
+    grid-area: descrip-1;
+ }
+ #no_principal_img2 {
+    grid-area: imagen-2;
+ }
+ #no_principal_txt2 {
+    grid-area: descrip-2;
+ }
+/* FOOTER */
+footer {
+    background-color: #F49D1A; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: pie_de_pagina;
+}
+.container_footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+.container_footer div{
+    padding: 1%;
+}
+h4 {
+    color: lightblue;
+    font-size: medium;
+}
+.logo_footer {
+    width: 25%;
+}
+.info_footer {
+    text-align: left;
+    width: 25%;
+}
+.info_footer p{
+    font-size: small;
+    color: rgb(23, 19, 19);
+}
+.contactar_footer{
+    width: 25%;
+}
+.contactar_footer ul {
+    list-style-type: none;
+}
+.contactar_footer li a {
+    color: rgb(23, 19, 19);
+}
+.redes_footer {
+    width: 25%; 
+}
+.redes_footer a {
+    color: #78767c;
+    margin: 1%;
+}
+.copyright_footer {
+    background-color: whitesmoke;
+}
+.copyright_footer p{
+   font-size: small;
+   font-style: italic;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.form {
+    border-radius: 5px;
+    width: 500px;
+    height: auto;
+    padding: auto;
+    background-color: rgb(235, 83, 83);
+}
+.form-tittle {
+    padding: 10px;
+    text-align: center;
+}
+.form-label {
+    display: block;
+    font-size: 15px;
+}
+.form-input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #78767c;
+    border-bottom: solid 2px #cfb6fd;
+
+}
+.form-textarea{
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #78767c;
+    border-bottom: solid 2px #cfb6fd;
+}
+
+.nosotros-img { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nosotros-img div img{
+    width: 30%;
+}
+.text-center {
+    text-align: center;
+}
+#no_principal {
+    grid-area: no_principal;
+}
+/* DESKTOP */
+@media screen and (max-width: 1023px){
+    .grid-container-index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 40vh 80vh 20vh;
+        grid-template-areas:   "encabezado"
+                               "principal"
+                               "no_principal"
+                               "pie_de_pagina";
+    }
+
+    /* header */
+nav {
+    justify-content: center;
+}
+
+    /* footer */
+    .container_footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:  "seccion1 seccion2"
+                              "seccion3 seccion4";
+    }
+    .logo_footer {
+        grid-area: seccion1;
+        width: 90%;
+    }
+    .info_footer {
+        grid-area: seccion2;
+        width: 90%;
+    }
+    .contactar_footer {
+        grid-area: seccion3;
+        width: 90%;
+    }
+    .redes_footer {
+        grid-area: seccion4;
+        width: 90%;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px){
+    .grid-container-index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 40vh 80vh 40vh;
+        grid-template-areas:   "encabezado"
+                               "principal"
+                               "no_principal"
+                               "pie_de_pagina";}
+
+    /* header */
+    
+    header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+ 
+    nav {
+        justify-content: center;}
+
+    .contenedor_logo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    }
+.contenedor_logo a{
+    text-align: center;
+}
+    .logo {
+    width: 70%;
+    }
+    .navbar {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar li {
+    margin: 12px;
+}
+  
+/* main */
+                               
+.grid-container-index-no_principal {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "imagen-1"
+                            "descrip-1"
+                            "imagen-2"
+                            "descrip-2";
+}
+
+ #no_principal_txt1 {
+    text-align: center;
+ }
+
+ #no_principal_txt2 {
+    text-align: center;
+ }
+
+    /*footer */
+    .container_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }  
+        
+    .logo_footer {
+            width: 75%;
+        }
+    .info_footer {
+            text-align: center;
+            width: 75%;
+        }
+       
+    .contactar_footer{
+            text-align: center;
+            width: 75%;            
+        }
+       
+    .redes_footer {
+            text-align: center;
+            width: 75%; 
+        } 
+}

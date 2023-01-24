@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--logo-->
+      <div class="contenedor_logo">
+        <a href="../index.html">
+          <img class="logo" src="../assets/imagenes/img-logo.svg" alt=""
+        /></a>
+      </div>
+      <!--navbar-->
+      <nav>
+        <ul class="navbar">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./tripulantes.html">Tripulantes</a></li>
+          <li><a href="./barcos.html">Barcos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--MAIN-->
+    <main>
+      <div class="form">
+        <!--Formulario contacto-->
+        <form action="#">
+          <div class="form-header">
+            <h1 class="form-tittle">¡UNITE A NOSOTROS!</h1>
+          </div>
+          <label for="nombre" class="form-label">Tu nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="Nombre"
+            placeholder="Escribí tu nombre"
+            class="form-input"
+            required
+          />
+          <label for="email" class="form-label">Tu correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Escribí tu email"
+            class="form-input"
+            required
+          />
+          <label for="Sueño" class="form-label">Contanos tu sueño</label>
+          <input
+            type="text"
+            name="Sueño"
+            id="sueño"
+            placeholder="Contanos tus objetivos"
+            class="form-input"
+            required
+          />
+          <label for="mensaje" class="form-label"
+            >¿Porqué te gustaría unirte?</label
+          >
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            class="form-textarea"
+            placeholder="Acá escribí el por qué"
+          ></textarea>
+          <input type="checkbox" name="Términos" id="terminos" value="sí" />
+          <label for="terminos" class="form-label-check"
+            >Acepto los términos para formar parte</label
+          >
+          <div class="form-button">
+            <input type="submit" class="btn" value="Enviar" />
+            <input type="reset" class="btn" value="Limpiar" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <div class="container_footer">
+        <div class="logo_footer">
+          <a href="../index.html">
+            <img src="../assets/imagenes/img-logo.svg" alt=""
+          /></a>
+        </div>
+        <div class="info_footer">
+          <h4>ONE PIECE</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis atque dolorem repudiandae nemo obcaecati natus
+            accusantium ducimus sequi recusandae, commodi quam nam itaque ad
+            delectus laudantium distinctio vitae omnis laboriosam
+            exercitationem necessitatibus.
+          </p>
+        </div>
+        <div class="contactar_footer">
+          <h4>CONTACTAME</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.google.com/intl/es/gmail/about/"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i>leanriveros.lr@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://web.whatsapp.com/" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i>3518051427
+              </a>
+            </li>
+            <li>
+              <a href="./pages/contacto.html" target="_blank"
+                ><i class="fa-solid fa-circle-user"></i>Formulario
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="redes_footer">
+          <h4>SEGUIME EN LAS REDES</h4>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="fa-brands fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://web.whatsapp.com/" target="_blank"
+            ><i class="fa-brands fa-whatsapp fa-2x"></i
+          ></a>
+          <a href="https://ar.linkedin.com/" target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook fa-2x"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright_footer text-center">
+        <p>
+          Todos los derechos reservados © 2023 ONE PIECE. El contenido de esta
+          página es meramente informativo.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
